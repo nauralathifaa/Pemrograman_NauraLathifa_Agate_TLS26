@@ -33,6 +33,10 @@ int main() {
         }
 
         int tereliminasi = astronot[currentIndex];
+        
+        // PERBAIKAN: Cetak astronot yang baru saja tereliminasi
+        std::cout << tereliminasi << " ";
+
         astronot[currentIndex] = 0;
         sisaAktif--;
 
@@ -53,6 +57,7 @@ int main() {
         }
     }
 
+    // Cetak astronot terakhir yang bertahan
     for (int i = 0; i < N; i++) {
         if (astronot[i] != 0) {
             std::cout << astronot[i] << std::endl;
